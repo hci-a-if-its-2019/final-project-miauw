@@ -14,8 +14,11 @@ The pricing of Azure is also simpler and cost-effective. Popularly termed as “
 link: [portal.azure.com](https://portal.azure.com)
 
 ## System's Bad UI
-
-Nam a eleifend tortor. In eget facilisis est. Suspendisse tincidunt mi lorem, non volutpat libero scelerisque id. Curabitur dui dui, dignissim ac lectus sit amet, sodales gravida ex. Donec mattis, enim vitae sollicitudin rhoncus, diam elit consequat massa, et rutrum magna augue vitae turpis. In eget arcu laoreet, dapibus arcu eget, mattis massa. Aenean fringilla eu dui ut vestibulum. Aenean consequat consectetur massa, eget ornare sapien dignissim vel. Nunc vestibulum tellus ut dolor euismod commodo. Vivamus fringilla urna eget elit vestibulum mattis. Sed nec mattis nisl. Sed sit amet sapien at libero tincidunt ullamcorper. Sed tempus non quam eu rutrum. Nunc fringilla lorem non nibh pulvinar fermentum.
+- No short way to quickly access invoice
+- Confusing options on creating new virtual machine resource
+- The progress shown by Azure only list the completed steps, no information about remaining steps that need to be done. The progress shown is not informative
+- When creating resource from a specific resource group, we still need to specify the resource group in the form
+- No options to remove several resource group at once (no option to remove them after checking all of the resource groups)
 
 
 ## Preliminary Question and Instruction Script
