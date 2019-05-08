@@ -3,8 +3,31 @@
 1. Yolanda Hertita Pratama (05111640000052)
 1. Rahandi Noor Pasha (05111640000054)
 
+## Table of Contents <!-- omit in toc -->
+- [Contextual Inquiry](#contextual-inquiry)
+  - [System's Description](#systems-description)
+  - [System's Bad UI](#systems-bad-ui)
+  - [Preliminary Question and Instruction Script](#preliminary-question-and-instruction-script)
+    - [Preliminary Question](#preliminary-question)
+    - [Instruction Script](#instruction-script)
+  - [User Description](#user-description)
+    - [Participant 1](#participant-1)
+    - [Participant 2](#participant-2)
+    - [Participant 3](#participant-3)
+    - [Participant 4](#participant-4)
+    - [Participant 5](#participant-5)
+  - [Transcript](#transcript)
+    - [Participant 1](#participant-1-1)
+    - [Participant 2](#participant-2-1)
+    - [Participant 4](#participant-4-1)
+    - [Participant 5](#participant-5-1)
+  - [Models and Annotations](#models-and-annotations)
+    - [Artifact Model](#artifact-model)
+    - [Flow Model](#flow-model)
+
 # Contextual Inquiry
 ## System's Description
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ![](src/Azure-image.png)
 
 Microsoft Azure is a public cloud computing platform. It provides a range of cloud services, including full virtual machines, databases, file storage, backups, and services for mobile and web apps.
@@ -14,6 +37,7 @@ The pricing of Azure is also simpler and cost-effective. Popularly termed as “
 link: [portal.azure.com](https://portal.azure.com)
 
 ## System's Bad UI
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 - No short way to quickly access invoice
 - Confusing options on creating new virtual machine resource
 - The progress shown by Azure only list the completed steps, no information about remaining steps that need to be done. The progress shown is not informative
@@ -22,6 +46,7 @@ link: [portal.azure.com](https://portal.azure.com)
 
 
 ## Preliminary Question and Instruction Script
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ### Preliminary Question
 - Have you ever heard of cloud technology? Like Azure, AWS ?
 - Have you ever used Azure before?
@@ -38,6 +63,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 - delete the newly created resource group
 
 ## User Description
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ### Participant 1
 - The participant is a 20 years old Male user
 - Student of Informatics Department ITS
@@ -80,6 +106,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 ## Transcript
 ### Participant 1
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
@@ -134,6 +161,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 
 ### Participant 2
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
@@ -192,6 +220,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
  1. **15:28** 👨‍💻: Yok
 
  ### Participant 3
+ #### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
@@ -235,6 +264,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 
 ### Participant 4
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
@@ -281,6 +311,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 
 ### Participant 5
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
@@ -333,7 +364,20 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 1. **13:32** 👨‍🔬: Wes, ini lama. Gausah kamu tungguin gaapa. Sudah selesai kok. Suwun yo
 1. **13:36** 👨‍💻: Wes ngunu? yee yawes
 
+## Models and Annotations
+### Artifact Model
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![basic](src/basic.png)
 
+![ip](src/networking.png)
 
+![price](src/price.png)
 
+![progress](src/progress.jpg)
+
+![delete](src/delete.jpg)
+
+### Flow Model
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![flow](src/flow_model.jpg)
 
