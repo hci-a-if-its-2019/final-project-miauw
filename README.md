@@ -75,7 +75,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 - Student of Informatics Department ITS
 - He is not familiar with cloud technology
 - He had no experiance with Azure 
-- He is not familiar with accessing remote server
+- He is familiar with accessing remote server
 - Never create and use Virtual Machine on the cloud
 
 ## Transcript
