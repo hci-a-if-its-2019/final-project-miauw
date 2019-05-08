@@ -27,6 +27,7 @@ link: [portal.azure.com](https://portal.azure.com)
 - Have you ever used Azure before?
 - Are you familiar with accessing remote server?
 - Have you ever created or used virtual machine on the cloud before?
+
 ### Instruction Script
 - open Azure Portal web
 - login with ITS email account
@@ -68,6 +69,14 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 - She had no experience with Azure
 - She is not familiar with accessing remote server
 - Never create or use Virtual Machine on the cloud
+
+### Participant 5
+- The participant is a 20 years old Male user
+- Student of Informatics Department ITS
+- He is not familiar with cloud technology
+- He had no experiance with Azure 
+- He is not familiar with accessing remote server
+- Ever create and use Virtual Machine on the cloud
 
 ## Transcript
 ### Participant 1
@@ -275,38 +284,55 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
-1. **00:01** 👨‍🔬:
-1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬: Haloo. Disini kita mau tanya-tanya tentang suatu sistem nih. Langsung aja ya, kamu pernah dengar tentang teknologi cloud ngga, penyedianya kaya Azure, AWS dan teman-temannya?
+1. **00:07** 👨‍💻: Saya tidak pernah mendengar semuanya 
+1. **00:10** 👨‍🔬: Pernah pake Azure sebelumnya?
+1. **00:12** 👨‍💻: Belum
+1. **00:14** 👨‍🔬: Familiar sama akses remote server ngga? 
+1. **00:17** 👨‍💻: Iya
+1. **00:19** 👨‍🔬: Pernah bikin atau make VM atau VPS di cloud? 
+1. **00:24** 👨‍💻: Di cloud? ga pernah 
+1. **00:30** 👨‍🔬: Nah sekarang coba kamu buka invoice dari akun ku. Tagihannya, buka en coba 
+1. **00:33** 👨‍💻: Hmmm dimana tagihan.. (Participant menuju halaman Cost Management and Billing dan Invoice tapi belum muncul tagihannya) iki tah?
+1. **00:39** 👨‍🔬: Pokok sampe muncul list nominalnya berapa
+1. **00:42** 👨‍💻: Nominalnya berapa? (Participant kebingungan karena invoicenya hilang, akhirnya menuju ke halaman Cost dan Billing lagi. Kemudian memilih salah satu subscription) (**01:27**) Iki tah? oh iki. Bener ta ini? Susah ya.
+1. **01:33** 👨‍🔬: Iya. Nah terus sekarang coba bikin Virtual Machine baru.
+1. **01:48** 👨‍💻: (Participant menuju halaman Virtual Machine kemudian membuat VM baru) Bikin baru
+1. **02:01** 👨‍🔬: Nah coba bikinnya pake Resource Group yang baru.
+1. **02:14** 👨‍💻: Iki, ooo bikin baru (Participant membuat resource group baru)
+1. **02:21** 👨‍🔬: Nah terus region nya Asia Southeast 
+1. **02:24** 👨‍💻: (Participant memilih region Asia Southeast), terus iki
+1. **02:33** 👨‍🔬: Terus ganti tipe Virtual Machine nya B1S
+1. **02:37** 👨‍💻: Tipe? Tipe apa? Ini ta? B1S ya, oke
+1. **03:00** 👨‍🔬: Terus atur loginnya pakai username dan password, username passwordnnya terserah awakmu
+1. **03:09** 👨‍💻: terserah awakmu. Haduh apa ini harus lowercase, uppercase, number (Participant mengatur username password) 
+1. **03:42** 👨‍🔬: Terus aktifkan port buat SSH
+1. **03:45** 👨‍💻: (Participant mengatur port SSH) wow, terus? 
+1. **03:52** 👨‍🔬: Lanjut ke berikutnya, terus ini kan defaultnya dia dapat IP nya IP dinamis, coba ganti ke IP public nya jadi statis.
+1. **04:12** 👨‍💻: Disini? apa di network? IP public nya jadi static (Participant kebingungan mencari cara mengubah IP public menjadi static) lho gak neng kene? tidak tidak (**05:48**) Endi, gaonok.
+1. **06:03** 👨‍🔬: Perlu hint?
+1. **06:05** 👨‍💻: Iya hint hint
+1. **06:08** 👨‍🔬: Jadi public IP nya bikin baru.
+1. **06:18** 👨‍💻: Hoooo gitu. Disini toh. Ngono lhooo. Wes 
+1. **06:26** 👨‍🔬: Wes, sekarang dibikin. 
+1. **06:30** 👨‍💻: Rong atus ewu lho, yakin a? (Dua ratus ribu lho, yakin ta?) (Participant melihat preview harga)
+1. **06:34** 👨‍🔬: Oh ya? itu harga e berapa emang?
+1. **06:36** 👨‍💻: Dua ratus ribu, eh dua ratus juta. Eh iki iki dua ratus rupiah yo wkwkwk. Per jam yo? dua ratus rupiah yo? 
+1. **06:42** 👨‍🔬: Iyo dua ratus rupiah per jam. Nah menurutmu ini tampilan apa?
+1. **06:51** 👨‍💻: Ini tampilan apa? status. Tampilan management VM nya masih dideploy.  
+1. **07:02** 👨‍🔬: Nah kira-kira berapa lama lagi?
+1. **07:05** 👨‍💻: Oh ini kira-kira segini (menunjuk waktu yang telah dikerjakan) Lho kok nambah? bukan ini yo 
+1. **07:30** 👨‍🔬: Jadi awakmu bisa ngerti gak dia kira-kira kapan selesai? 
+1. **07:38** 👨‍💻: Gak ngerti 
+1. **07:45** 👨‍🔬: Yawes sekarang bikin VM baru lagi persis kaya tadi dengan resource group baru. Langkah-langkahnya sama kaya tadi. 
+1. **07:49** 👨‍💻: (Participant membuat VM baru) wes jago ini 
+1. **11:14** 👨‍🔬: Nah sudah ni, tadi kan kamu pas bikin VM sekalian bikin resource group baru, Nah sekarang coba resource groupnya itu hapusen dua dua nya 
+1. **11:25** 👨‍💻: Haa, piye carane? Dimana? Iki (Menuju halaman resource group, kemudian mencentang dua-duanya) (**12:40**) Ga onok tombol delete i. Gak isok yo?
+1. **13:06** 👨‍🔬: Gak bisa ya? yasudah hapus satu-satu ae
+1. **13:10** 👨‍💻: (Participant menghapus satu per satu resource group yang baru dibuat)
+1. **13:32** 👨‍🔬: Wes, ini lama. Gausah kamu tungguin gaapa. Sudah selesai kok. Suwun yo
+1. **13:36** 👨‍💻: Wes ngunu? yee yawes
+
 
 
 
