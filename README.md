@@ -46,8 +46,20 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 - Never create or use Virtual Machine on the cloud
 
 ### Participant 2
+- The participant is a 20 years old Male user
+- Student of Informatics Department ITS
+- He is familiar with cloud technology, usually use Digital Ocean
+- He had no experience with Azure
+- He is familiar with accessing remote server
+- Never create or use Virtual Machine on the cloud
 
 ### Participant 3
+- The participant is a 21 years old Male user
+- Student of Informatics Department ITS
+- He is familiar with cloud technology, usually use Google Cloud Platform
+- He used Azure once, but confused and frustated with Azure 
+- He is not familiar with accessing remote server
+- Ever create and use Virtual Machine on the cloud
 
 ## Transcript
 ### Participant 1
@@ -102,3 +114,105 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
  1. **23:23** 👨‍💻: (Participant menghapus satu per satu pada akhirnya dan berhasil menghapus kedua resource group yang baru dibuat)
  1. **24:02** 👨‍🔬: Yeee akhirnya. Sudah nih, makasih yaaaa.
  1. **24:04** 👨‍💻: Oke sama sama, semangat!
+
+
+### Participant 2
+👨‍🔬 : Miaw Member
+👨‍💻 : Participant
+
+ 1. **00:01** 👨‍🔬: Haai, ada waktu buat kita wawancara buat tugas IMK ngga?
+ 1. **00:04** 👨‍💻: Oohh boleh-boleh
+ 1. **00:06** 👨‍🔬: Terimakasi, nah, pernah denger teknologi cloud ngga kaya Azure atau AWS?
+ 1. **00:11** 👨‍💻: Ee VPS? (👨‍🔬: Iya) Pernah
+ 1. **00:13** 👨‍🔬: Pernah makenya apa?
+ 1. **00:15** 👨‍💻: Digital Ocean
+ 1. **00:17** 👨‍🔬: Ooh DO. Pernah pake Azure ngga?
+ 1. **00:20** 👨‍💻: Ngga pernah 
+ 1. **00:21** 👨‍🔬: Oo belum pernah ya. Familiar ngga sama mengakses remote server?
+ 1. **00:25** 👨‍💻: SSH? Familiar
+ 1. **00:27** 👨‍🔬: Terus pernah bikin atau make VM di cloud?
+ 1. **00:33** 👨‍💻: VM? Ngga
+ 1. **00:36** 👨‍🔬: Pernah bikin atau make VPS di cloud?
+ 1. **00:38** 👨‍💻: VPS? Pernah
+ 1. **00:40** 👨‍🔬: Nah, oke Jadi ini tuh portal buat Azure. Azure itu menyediakan teknologi cloud juga kaya DO (Digital Ocean). Sekarang kita minta tolong kamu buat buka Invoice. 
+ 1. **01:15** 👨‍💻: Invoice.. hmmm nandi (Menemukan halaman Cost Management and Billing kemudian menekan button Invoice tapi belum sampai menampilkan "Invoice") ini invoice
+ 1. **01:37** 👨‍🔬: Ee belum sampe
+ 1. **01:39** 👨‍💻: (Menekan button dropdown pada Subscription kemudian memilih subscription yang ada kemudian tampil invoicenya) ini ya, udah 
+ 1. **01:57** 👨‍🔬: Oke. Nah terus abis ini kita bakal bikin dua VM, sekarang coba kamu menuju halaman buat bikin VM
+ 1. **02:15** 👨‍💻: (Menuju halaman VM) Virtual Machine, ini
+ 1. **02:18** 👨‍🔬: Nah iya sekarang tambah VM baru, terus sekarang kamu bikin VM dengan spesifikasi sebagai berikut, tipenya B1S, areanya di SouthEast Asia, nah itu dulu. Oh iya, kalau bikin VM nya gunakan resource group yang baru.
+ 1. **02:50** 👨‍💻: (Participant membuat VM baru dengan spek yang dijelaskan, ) resource group baru? gimana (Participant bingung saat mencari tempat untuk mendefinisikan resource group baru sampai akhirnya menemukan field untuk create new resource group) oalah ini, ya Allah ga ketok lho, bro bro. Terus apa lagi
+ 1. **03:40** 👨‍🔬: Namanya bebas, pastikan dia bisa diakses lewat SSH. Terus tipenya B1S. 
+ 1. **04:02** 👨‍💻: Wes.
+ 1. **04:04** 👨‍🔬: Terus username passwordnya bebas
+ 1. **04:07** 👨‍💻: (Participant cukup memakan waktu disini karena password yang digunakan harus panjang dan mengandung karakter-karakter)
+ 1. **05:26** 👨‍🔬: Terus aktifkan port pada SSH. Abis itu pastikan dia IP nya di set public sama static.
+ 1. **05:50** 👨‍💻: Jek neng kene? Opo next?
+ 1. **05:53** 👨‍🔬: Yo terserah. Cobak en dulu ae.
+ 1. **05:57** 👨‍💻: (Participant kebingungan mencari cara untuk mengganti IP menjadi public dan static) (**06:59**) Wes ga eroh (Participant menyerah kemudian langsung membuat VM tersebut)
+ 1. **07:12** 👨‍🔬: Udah nih? Ya nanti kita kasih tau cara nya waktu bikin VM kedua
+ 1. **07:16** 👨‍💻: Lho bikin lagi?
+ 1. **07:18** 👨‍🔬: Iya. Nah ini menurutmu tampilan apa ini? (Tampilan sedang membuat VM) 
+ 1. **07:28** 👨‍💻: Bikin VM.
+ 1. **07:32** 👨‍🔬: Kenapa itu ada banyak tadi kan cuma bikin 1?
+ 1. **07:45** 👨‍💻: Wah ga eroh.
+ 1. **07:48** 👨‍🔬: Nah dia kan lagi nyetting. Kalau kamu lihat ini tuh kira kira butuh berapa lama lagi?
+ 1. **07:58** 👨‍💻: Ooh, gabisa dikira-kira kayanya.
+ 1. **08:26** 👨‍🔬: Yadah, ini langsung bikin VM lagi kaya tadi ya
+ 1. **08:29** 👨‍💻: He em. (Participant membuat VM dengan spek yang sama)
+ 1. **10:16** 👨‍🔬: Coba tadi buka yang networking lagi. Nah disitu kan ada public IP kan, nah disitu bisa diganti jadi static sekarang.
+ 1. **10:42** 👨‍💻: Hoooo (Participant mengubah dynamic IP menjadi static IP)
+ 1. **10:57** 👨‍🔬: Nah sudah kan, itu menurutmu harganya berapa?
+ 1. **11:00** 👨‍💻: Seratus enam .. ribu. Eh seratus enam rupiah per jam. 
+ 1. **11:13** 👨‍🔬: Iya di create aja. Nah ini agak sabar nunggu ini sampai selesai.
+ 1. **11:32** 👨‍🔬: Nah tadi kan waktu kamu bikin VM itu kamu bikin resource grup baru, Resource group itu bisa ngelompokkan VM, storage, network IP. Kan kamu udah bikin dua. Sekarang coba kamu hapus kedua resource group yang baru kamu bikin itu. 
+ 1. **13:57** 👨‍💻: (Participant menuju halaman resource group kemudian langsung mengklik dropdown tanpa mencentang dan kemudian mengklik button delete (berhasil))
+ 1. **14:16** 👨‍🔬: Kalau kamu langsung ngehapus dua resource group secara bersamaan bisa ngga? 
+ 1. **14:24** 👨‍💻: Hoo (Participant mencoba menghapus kedua resource group dengan mencentang kedua resource group) ndak bisa kayanya. Terus ini buat apa ni cawang-cawang?
+ 1. **14:41** 👨‍🔬: Nah iya emang ngga bisa, apa guna cawang cawang ya, ngga? Yasuda hapus satu-satu aja.
+ 1. **15:14** 👨‍💻: (Participant menghapus resource group yang baru dibuat) Wes
+ 1. **15:22** 👨‍🔬: Wes, yauda gitu aja. Terima kasih banyak ya
+ 1. **15:28** 👨‍💻: Yok
+
+ ### Participant 3
+👨‍🔬 : Miaw Member
+👨‍💻 : Participant
+
+1. **00:01** 👨‍💻: Halooo test test
+1. **00:11** 👨‍🔬: Hi.. disini kita mau nanya-nanya kamu tentang suatu web nih. Ee sebelumnya kamu pernah mendengar tentang cloud technology ngga?
+1. **00:23** 👨‍💻: Pernah 
+1. **00:25** 👨‍🔬: Pernah make ngga? 
+1. **00:28** 👨‍💻: Kalau make pernah, tapi jarang. Kalau disuruh doang.
+1. **00:34** 👨‍🔬: Hoo. Pernahnya make buat apa?
+1. **00:37** 👨‍💻: Waktu itu buat magang, buat nge running modelnya. Pakai Google Cloud Platform 
+1. **00:55** 👨‍🔬: Ooo gitu. Udah pernah make Azure belum?
+1. **00:58** 👨‍💻: Waktu itu pernah nyoba, karena dibilang sama temen ada gratisan. Tapi aku bingung, karena lebih ribet, jadi ngga jadi.
+1. **01:08** 👨‍🔬: Ooo oke. Kamu familiar dengan mengakses remote server ngga?
+1. **01:16** 👨‍💻: Eeee, kurang familiar.
+1. **01:18** 👨‍🔬: Oke. Terus kamu pernah buat Virtual Machine di cloud?
+1. **01:37** 👨‍💻: Pernah. 
+1. **01:40** 👨‍🔬: Nah oke, sekarang kan udah login di Azure nih. Sekarang coba kamu melihat invoice dari situ.
+1. **01:47** 👨‍💻: Wah banyak banget nih tulisannya, ini cari invoice ya. (Participant menuju halaman Cost Manajement and Billing kemudian menekan button invoice dan menekan dropdown subscription kemudian memilih salah satu subscription) Ooh udah
+1. **02:19** 👨‍🔬: Oooh udah. Oke lancar. Terus sekarang coba kamu bikin Virtual Machine. Kamu bikin resource group baru. Terus speknya B1S.
+1. **02:52** 👨‍💻: (Participant kebingungan saat mencari spec tertentu, pada akhirnya menemukannya di "Change Size")
+1. **03:39** 👨‍🔬: Terus allow port buat SSH. Sama authenticationnya pake Password
+1. **03:42** 👨‍💻: (Mengallow SSH dan mengubah authentication) (**04:34**)Terus apa lagi tadi yang belum?
+1. **04:45** 👨‍🔬: Ini kan defaultnya dia kan dynamic IP, coba kamu ganti pake static IP. 
+1. **04:49** 👨‍💻: (Participant kebingungan untuk mengubah IP menjadi static) (**04:12**) Boleh menyerah ngga saya capek. Dimana ya? ngga ada tombol bantuan nih?
+1. **05:52** 👨‍🔬: Tadi speknya berubah lagi ya, ngga B1S
+1. **07:12** 👨‍💻: (Akhirnya menemukan caranya) Ohh disini. Ooohhh. Sembunyi sih. Gak bilang-bilang kalau sembunyi. Kenapa ini? (Mengubah IP menjadi static)
+1. **07:46** 👨‍🔬: (Participant menuju halaman untuk mereview dan create) Itu harganya berapa?
+1. **07:50** 👨‍💻: Seratus enam .. rupiah. Per jam.
+1. **07:54** 👨‍🔬: Hooo bener. Sekarang tunggu sampai selesai. Menurutmu berapa lama lagi?
+1. **08:40** 👨‍💻: Hmmm gaada estimation time nya ya? 
+1. **09:10** 👨‍🔬: Iya, sekarang tinggal aja itu, bikin VM baru lagi. Sama kaya tadi spec nya.
+1. **12:45** 👨‍💻: (Participant selesai membuat VM baru lagi) 
+1. **12:46** 👨‍🔬: Sekarang hapus kedua resource group yang udah kamu bikin tadi.
+1. **12:52** 👨‍💻: (Participant mencentang kedua resource group yang dibuat) lho kok gaada tombol hapusnya?
+1. **12:58** 👨‍🔬: Lho iya yaapa. Gimana dong
+1. **13:22** 👨‍💻: (Participant masih mencari-cari cara menghapus resource group) (**14:56**) Coba dari sini ah (Participant mencentang kedua resource group yang dibuat kemudian menekan tombol delete di keyboard)
+1. **15:00** 👨‍🔬: (Kami tertawa, maap) 
+1. **15:12** 👨‍💻: (Participant pada akhirnya menemukan kalau mencentang lebih dari satu, button dropdownnya hilang) Lho kalau dicawang dua hilang, jelek ini. (Kemudian participant menghapus satu-satu resource group) 
+1. **15:51** 👨‍🔬: Naah sudah. Terima kasihhh ya.
+1. **15:54** 👨‍💻: Oh sudah, gitu aja ya ternyata. Oke.
+
