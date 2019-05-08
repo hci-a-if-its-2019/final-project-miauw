@@ -61,9 +61,17 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 - He is not familiar with accessing remote server
 - Ever create and use Virtual Machine on the cloud
 
+### Participant 4
+- The participant is a 20 years old Female user
+- Student of Informatics Department ITS
+- She is familiar with cloud technology
+- She had no experience with Azure
+- She is not familiar with accessing remote server
+- Never create or use Virtual Machine on the cloud
+
 ## Transcript
 ### Participant 1
-👨‍🔬 : Miaw Member
+👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
  1. **00:01** 👨‍🔬: Halo, nah disini kita mau melakukan Contextual Inquiry buat IMK
@@ -117,7 +125,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 
 ### Participant 2
-👨‍🔬 : Miaw Member
+👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
  1. **00:01** 👨‍🔬: Haai, ada waktu buat kita wawancara buat tugas IMK ngga?
@@ -175,7 +183,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
  1. **15:28** 👨‍💻: Yok
 
  ### Participant 3
-👨‍🔬 : Miaw Member
+👨‍🔬 : Miaw Member <br>
 👨‍💻 : Participant
 
 1. **00:01** 👨‍💻: Halooo test test
@@ -215,4 +223,91 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 1. **15:12** 👨‍💻: (Participant pada akhirnya menemukan kalau mencentang lebih dari satu, button dropdownnya hilang) Lho kalau dicawang dua hilang, jelek ini. (Kemudian participant menghapus satu-satu resource group) 
 1. **15:51** 👨‍🔬: Naah sudah. Terima kasihhh ya.
 1. **15:54** 👨‍💻: Oh sudah, gitu aja ya ternyata. Oke.
+
+
+### Participant 4
+👨‍🔬 : Miaw Member <br>
+👨‍💻 : Participant
+
+1. **00:01** 👨‍🔬: Haloooo. Disini kita akan bertanya-tanya padamu tentang suatu sistem. Nah sebelumnya ada pertanyaan pendahuluan nih. Sebelumnya kamu tahu tentang teknologi cloud ngga kaya Azure, AWS?
+1. **00:35** 👨‍💻: Iya, pernah
+1. **00:48** 👨‍🔬: Pernah make Azure ngga?
+1. **00:51** 👨‍💻: Ngga
+1. **00:53** 👨‍🔬: Terus kamu familiar sama mengakses remote server ngga?
+1. **00:58** 👨‍💻: Ngga. Hmmm itu kaya team viewer bukan? Oo ngga pernah wkwk.
+1. **01:25** 👨‍🔬: Pernah bikin VM (Virtual Machine) di cloud?
+1. **01:28** 👨‍💻: Ngga
+1. **01:30** 👨‍🔬: Okeee. Sekarang coba kamu buka billing Invoice
+1. **02:20** 👨‍💻: (Participant masih mencari halaman yang kira-kira terdapat Invoice, kemudian akhirnya menuju halaman Cost Management and Billing) Mana se?Ini ta? 
+1. **02:44** 👨‍🔬: Iya itu, pilih salah satu invoice
+1. **02:47** 👨‍💻: (Participant memilih salah satu subscription) Ini sudah
+1. **02:56** 👨‍🔬: Iya, sekarang bikin Virtual Machine baru
+1. **03:02** 👨‍💻: How (Participant menuju halaman Virtual Machine, kemudian Add new VM)
+1. **03:38** 👨‍🔬: Sekarang bikin resource group baru. Oh iya, apa yang kamu pikirkan selama ini, katakan saja
+1. **03:43** 👨‍💻: Apa tadi, disuruh ngapain?
+1. **03:46** 👨‍🔬: Bikin resource group baru
+1. **04:04** 👨‍💻: Ooh bikin baru. (Participant tidak menekan button create new, langsung mengetik di list drop down jadi tidak bisa, kemudian sampai akhirnya sadar harus klik create new) Ooh create new
+1. **04:45** 👨‍🔬: Terus regionnya ambil yang SouthEast Asia, terus tipe nya ganti B1S 
+1. **04:48** 👨‍💻: Wait dimana? Oh size ini diganti B1S, terus?
+1. **05:09** 👨‍🔬: Terus isi password terserah kamu
+1. **05:13** 👨‍💻: (Participant juga mengisi password yang harus panjang)
+1. **06:07** 👨‍🔬: Nah portnya buka buat SSH. Terus sekarang kan dia IP nya dynamic, bikin jadi static 
+1. **06:15** 👨‍💻: (Participant mencari-cari cara untuk mengubah IP masih di halaman networking, pada akhirnya menyerah) (**07:55**) ngga tahu dimana, dimana?
+1. **07:57** 👨‍🔬: Di Public IP terus create new.
+1. **07:59** 👨‍💻: Oalah sudah, terus bikin nih? (Participant menekan button review & create)
+1. **08:06** 👨‍🔬: Itu kira-kira harga nya berapa?
+1. **08:09** 👨‍💻: Eee dua ratus enam. Kalau dari titiknya dua ratus enam ribu. Per hari.
+1. **08:15** 👨‍🔬: Dua ratus enam rupiah per jam. 
+1. **08:18** 👨‍💻: Oh yaa? Oalah. Oke (Participant create VM)
+1. **09:41** 👨‍🔬: Ini menurutmu berapa menit lagi selesai?
+1. **09:58** 👨‍💻: Tiga menit, empat menit. Eh tambah banyak, bukan itu bukan time yang tersisa. Mungkin sepuluh menit, atau kurang dari satu menit, hiyaa. Ngga tahu.
+1. **10:36** 👨‍🔬: Iya emang ngga ada waktu buat itu, sekarang bikin resource group baru lagi sama kaya tadi.
+1. **10:39** 👨‍💻: (Participant membuat resource baru)
+1. **12:38** 👨‍🔬: Nah kan tadi kamu sudah bikin resource group baru, sekarang coba kamu hapus kedua resource group itu
+1. **12:48** 👨‍💻: (Participant mencentang kedua resource group) Ngga bisa dihapus barengan ya, satu-satu aja ya (Participant menghapus satu-persatu)
+1. **13:51** 👨‍🔬: Menurutmu cawang itu buat apa? 
+1. **13:54** 👨‍💻: Ngga guna.
+1. **14:08** 👨‍🔬: Nah udah nih, terima kasih yaa
+1. **14:11** 👨‍💻: Oke de
+
+
+### Participant 5
+👨‍🔬 : Miaw Member <br>
+👨‍💻 : Participant
+
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+1. **00:01** 👨‍🔬:
+1. **00:35** 👨‍💻:
+
+
+
 
