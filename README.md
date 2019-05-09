@@ -24,6 +24,10 @@
   - [Models and Annotations](#models-and-annotations)
     - [Artifact Model](#artifact-model)
     - [Flow Model](#flow-model)
+    - [Cultural Model](#cultural-model)
+  - [Do's and Don't's](#dos-and-donts)
+    - [Do's](#dos)
+    - [Dont's](#donts)
 
 # Contextual Inquiry
 ## System's Description
@@ -381,3 +385,13 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 #### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ![flow](src/flow_model.jpg)
 
+### Cultural Model
+![cultural](src/cultural_model.jpg)
+
+## Do's and Don't's
+### Do's
+- Add easy access option for frequently choosen option
+- Move the create new button as part of the dropdown list
+- Show remaining time in deployment progress page
+### Dont's
+- Show price with a confusing arrangement which may cause misread
