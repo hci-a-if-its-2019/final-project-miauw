@@ -28,6 +28,13 @@
   - [Do's and Don't's](#dos-and-donts)
     - [Do's](#dos)
     - [Dont's](#donts)
+- [Skteching and Prototyping](#skteching-and-prototyping)
+  - [Part A Sketches](#part-a-sketches)
+    - [Design Rationale](#design-rationale)
+  - [Part B Assumptions](#part-b-assumptions)
+    - [Hardware](#hardware)
+    - [Users](#users)
+  - [Part C Prototypes](#part-c-prototypes)
 
 # Contextual Inquiry
 ## System's Description
@@ -395,3 +402,20 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 - Show remaining time in deployment progress page
 ### Dont's
 - Show price with a confusing arrangement which may cause misread
+
+# Skteching and Prototyping
+## Part A Sketches
+### Design Rationale
+When doing the inquiry process, we found that users didn't get all the feedbacks and informations they need like knowing when their virtual machine deployment will be done, what kind of IP they're getting etc. Also, some components in Azure website didn't have the affordance and signifier when they should, like the `add new` functionality that is represented by a hyperlink instead of button. And the way they give user prevention from accessing dangerous feature can be way too confusing so that user may not knowing how to access that feature. 
+
+Because all of that, we try to give user more information and feedback right ahead by giving them progress bar about deployment process to make them know how long they have to wait. We also try to use the right representation for user accessing certain feature. Last, we keep using confirmation for preventing user doing anything stupid but still let them knw where to access it.
+## Part B Assumptions
+### Hardware
+- PC with minimum spec for web browsing
+- Mouse and keyboard (I/O device)
+- Internet conncetion
+### Users
+- Have IT background (familiar with IT terms)
+- Familiar with cloud service providers
+## Part C Prototypes
+[Adobe XD](https://xd.adobe.com/view/ef328428-d4e1-44d9-51e7-a30612bffb85-9903/)
