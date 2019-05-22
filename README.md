@@ -417,9 +417,11 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 ![flow](src/flow_model.jpg)
 
 ### Cultural Model
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ![cultural](src/cultural_model.jpg)
 
 ## Do's and Don't's
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ### Do's
 - Add easy access option for frequently choosen option
 - Move the create new button as part of the dropdown list
@@ -429,11 +431,13 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 # Skteching and Prototyping
 ## Part A Sketches
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ### Design Rationale
 When doing the inquiry process, we found that users didn't get all the feedbacks and informations they need like knowing when their virtual machine deployment will be done, what kind of IP they're getting etc. Also, some components in Azure website didn't have the affordance and signifier when they should, like the `add new` functionality that is represented by a hyperlink instead of button. And the way they give user prevention from accessing dangerous feature can be way too confusing so that user may not knowing how to access that feature. 
 
 Because all of that, we try to give user more information and feedback right ahead by giving them progress bar about deployment process to make them know how long they have to wait. We also try to use the right representation for user accessing certain feature. Last, we keep using confirmation for preventing user doing anything stupid but still let them knw where to access it.
 ## Part B Assumptions
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 ### Hardware
 - PC with minimum spec for web browsing
 - Mouse and keyboard (I/O device)
@@ -446,15 +450,24 @@ Because all of that, we try to give user more information and feedback right ahe
 
 # Usability Evaluation and Prototyping (again)
 ## Operating the Prototype
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 [![Hi-Fi Prototype](https://img.youtube.com/vi/fmIQDOok-e8/0.jpg)](https://www.youtube.com/watch?v=fmIQDOok-e8 "")
 ## Part A: Usability Evaluation
 ### 1. Brief Description of Participants
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 #### a. Description of Participant 1
 #### b. Description of Participant 2
 #### c. Description of Participant 3
 #### d. Description of Participant 4
 #### e. Description of Participant 5
+- The participant is a 20 years old Male user
+- Student of Informatics Department ITS
+- He is not familiar with cloud technology
+- He had no experiance with Azure 
+- He is familiar with accessing remote server
+- Never create and use Virtual Machine on the cloud
 ### 2. Evaluation Script
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 #### Preliminary Question
 - Have you ever heard of cloud technology? Like Azure, AWS ?
 - Have you ever used Azure before?
@@ -476,6 +489,37 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 #### c. Transcript with Participant 3
 #### d. Transcript with Participant 4
 #### e. Transcript with Participant 5
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+👨‍🔬 : Miaw Member
+
+👨‍💻 : Participant
+1. **00:01** 👨‍🔬: Haloo, ketemu lagi ya. Aku mau minta tolong lagi nih
+2. **00:06** 👨‍💻: Ya, kenapa?
+3. **00:08** 👨‍🔬: Jadi, kapan hari kan udah nyoba web Azure itu. Nah, dari masukan anak-anak, kelompokku buat perbaikannya jadi prototype. Sekarang mau nge-test ke kamu.
+4. **00:25** 👨‍💻: Oo, gitu. Boleh-boleh. Mana prototype-nya?
+5. **00:30** 👨‍🔬: Ini linknya
+6. **00:34** 👨‍💻: (Membuka website prototype) Hoo, langsung ke home ya
+7. **00:55** 👨‍🔬: Iya, hehe. Sekarang kamu coba bikin Virtual Machine. 
+8. **01:05** 👨‍💻: Dari VM, terus `Add` ini kan ya. Speknya kayak kemarin?
+9. **01:20** 👨‍🔬: Iya, tapi ini ga semua fild bisa interaktif, hehe. Pokoknya kamu buat di resource group baru.
+10. **01:30** 👨‍💻: Resource group yang ini ya, terus ... (klik add new)
+11. **01:45** 👨‍🔬: Iya, terus kamu ubah IP-nya jadi static.
+12. **01:53** 👨‍💻: IP itu di networking ini kan. (klik IP static) Udah. Ini langsung kelihatan ya kalau awalnya dynamic.
+13. **02:15** 👨‍🔬: Iya, biar langsung tahu gitu. Habis ini, langsung create aja.
+14. **02:23** 👨‍💻: OK, (klik review + create). Aku klik create ya 
+15. **02:30** 👨‍🔬: Iya
+16. **02:36** 👨‍💻: (melihat tampilan progres deployment) Oh, ada progres bar di atas ya.
+17. **02:50** 👨‍🔬: Iya, kan kemarin katanya gatau kapan selesainya. 
+18. **03:06** 👨‍💻: Terus apa lagi?
+19. **03:13** 👨‍🔬: Sekarang coba buat hapus resource group.
+20. **03:20** 👨‍💻: (klik resource group di side navbar) Dari resource group ini ya, terus hapus yang mana?
+21. **03:33** 👨‍🔬: Hapus "ya" sama "ye".
+22. **03:42** 👨‍💻: Langsung dua apa satu-satu?
+23. **03:57** 👨‍🔬: Langsung dua aja 
+24. **04:05** 👨‍💻: (klik checkbox) Oh, ada tombol delete-nya ya. (klik delete lalu isi form konfirmasi). Udah ya
+25. **04:23** 👨‍🔬: Sip, makasih ya
+26. **04:30** 👨‍💻: Iya, sama-sama
+
 
 ### 4. Feedback and Incidence Analysis
 #### OBSERVATION 1 
