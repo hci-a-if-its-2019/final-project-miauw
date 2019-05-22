@@ -1,6 +1,6 @@
 
 
-<header class="navbar navbar-horizontal navbar-expand navbar-dark flex-row align-items-md-center ct-navbar">
+<header class="navbar navbar-horizontal fixed-top navbar-expand navbar-dark flex-row align-items-md-center ct-navbar">
     <a class="navbar-brand mr-0 mr-md-2" href="" aria-label="Bootstrap">
         Microsoft Azure
     </a>

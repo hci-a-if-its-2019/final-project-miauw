@@ -8,6 +8,13 @@
             background-color: #FFFFFF;
         }
 
+        .main-content {
+            top: 52px;
+            position: relative;
+            overflow: hidden;
+            height: calc(100vh -52px)
+        }
+
         .main-content .breadcrumb {
             background-color: inherit;
             font-size: 13px;
