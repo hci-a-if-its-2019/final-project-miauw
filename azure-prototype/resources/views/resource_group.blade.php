@@ -110,6 +110,10 @@
             margin-top: 15px;
         }
 
+        #right-sidebar h5 {
+            font-weight: 500;
+        }
+
         #right-sidebar .resource-group > h2 {
             margin-top: 25px;
         }
@@ -117,7 +121,6 @@
         .accordion {
             margin-bottom: 30px;
         }
-        
 
         
 
@@ -276,6 +279,7 @@
                                 <h2 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-r1" aria-expanded="false" aria-controls="collapse-r1">
                                         Affected Resources
+                                        <i class="fas fa-chevron-circle-down"></i>
                                     </button>
                                 </h2>
                             </div>
@@ -367,8 +371,9 @@
                                 <h2 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-r2" aria-expanded="false" aria-controls="collapse-r2">
                                         Affected Resources
+                                        <i class="fas fa-chevron-circle-down"></i>
                                     </button>
-                                    <i class="fas fa-chevron-circle-down ml-auto mr-0"></i>
+                                    
                                 </h2>
 
                             </div>
@@ -432,6 +437,11 @@
                 </div>
             </div>
 
+            <div class="button-delete-rg border-top mt-5">
+                <button type="button" class="btn btn-primary mt-3 mb-2" id="button-delete-rg">Delete</button>
+            </div>
+
+
 
 	    </div>
         
@@ -451,13 +461,19 @@
             $('#right-sidebar').toggle('show');
         });
 
+        $('#button-delete-rg').click(function(){
+            $('#right-sidebar').toggle('show');
+
+        });
+
         $(document).ready(function() {
             $('#right-sidebar').hide();
             let example = $('#example').DataTable({
                 "lengthChange": false,
                 columnDefs: [ {
                     orderable: false,
-                    className: 'select-checkbox',
+                    bSort: false,
+                    className: 'select-checkbox dt-head-center',
                     targets:   0
                 } ],
                 select: {

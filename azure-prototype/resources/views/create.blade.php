@@ -157,7 +157,7 @@
             </li>
         </ul>
 
-        <form action="" method="post">
+        <form>
             <div class="tab-content">
                 <div class="tab-pane active" id="fc-one">
                     <h5>Create a virtual machine that runs Linux or Windows. Select an image from Azure marketplace or use your own customized image. </h5>
