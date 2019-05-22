@@ -456,9 +456,22 @@ Because all of that, we try to give user more information and feedback right ahe
 ### 1. Brief Description of Participants
 #### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 #### a. Description of Participant 1
+- The participant is 21 years old Female user
+- Student of Informatics Department ITS
+- She rarely use cloud technology
+- She never use Azure before
 #### b. Description of Participant 2
+- The participant is 22 years old Female user
+- Student of Informatics Department ITS
+- She has used Google Cloud Platform before
 #### c. Description of Participant 3
 #### d. Description of Participant 4
+- The participant is a 20 years old Male user
+- Student of Informatics Department ITS
+- He is familiar with cloud technology
+- He had no experience with Azure
+- He is not familiar with accessing remote server
+- Never create or use Virtual Machine on the cloud
 #### e. Description of Participant 5
 - The participant is a 20 years old Male user
 - Student of Informatics Department ITS
@@ -514,6 +527,31 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 1. **03:59** her: (clicking "bin" icon) ok udah
 1. **04:08** me: sip selesai, terimakasih
 #### b. Transcript with Participant 2
+1. **00:02** me: halo kira - kira ini perbaikan dari masukan - masukan participant yang alin
+1. **00:08** her: wow, oke
+1. **00:15** me: menurutmu dari sini ada yang berubah ngga?
+1. **00:25** her: sepertinya tidak ada yang berubah
+1. **00:31** me: benar, ok lanjut
+1. **00:39** her: lah
+1. **00:47** me: sekarang coba buka halaman virtual machine
+1. **00:56** her: (clicking "Virtual machines" from sidebar) hmmm, masih ga ada bedanya
+1. **01:08** me: sekarang coba bikin virtual machine
+1. **01:16** her: oke (clicking "add" button)
+1. **01:20** me: bikin resource group baru
+1. **01:30** her: (clicking "resource group" dropdown) wah ini bagus "create new" nya didalem
+1. **01:42** me: ok, sekarang lanjut set ipnya jadi static
+1. **01:54** her: (clicking "Networking" tab) wow sekarang jadi keliatan static dynamicnya, tapi mending buat defaultnya ini Static aja jangan Dynamic soalnya biasanya orang - orang butuh Static
+1. **02:25** me: oksip makasih masukannya
+1. **02:33** her: terus ini langsung aja ya (clicking "review and create" and "create")
+1. **02:45** me: terasa ada yang beda?
+1. **02:51** her: progress bar?
+1. **02:55** me: correct
+1. **03:05** her: terus ngapain?
+1. **03:12** me: ngehapus 2 resource group
+1. **03:25** her: (clicking "Resource groups") terus (clicking 2 checkbox of resource groups)
+1. **03:45** me: sekarang coba hapus
+1. **03:57** her: woh sekarang bisa langsung 2 (clicking delete button) dah
+1. **04:02** me: ok cukup, makasih
 #### c. Transcript with Participant 3
 #### d. Transcript with Participant 4
 #### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
