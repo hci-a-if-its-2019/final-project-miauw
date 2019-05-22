@@ -64,6 +64,39 @@
             margin-left: 10px;
         }
 
+        /* #loading {
+                animation: rotation 2s infinite linear;
+        }
+
+        @keyframes rotation {
+                from {
+                        transform: rotate(0deg);
+                }
+                to {
+                        transform: rotate(359deg);
+                }
+        } */
+
+        /* .fas:hover {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+        } */
+
+        #loading {
+            animation-name: rotate; 
+            animation-duration: 2s; 
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+
     </style>
 @endsection
 
@@ -141,7 +174,7 @@
         <div class="deployment">
             <div class="deployment-status">
                 <div class="deployment-underway">
-                    <i class="fas fa-spinner d-inline"></i>
+                    <i class="fas fa-spinner" id="loading"></i>
                     <h2 class="d-inline">Your deployment is underway</h2>
                     <h5>Check the status of your deployment, manage resources, or troubleshoot deployment issues. Pin this page to your dashboard to easily find it next time</h5>
                 </div>
@@ -207,7 +240,7 @@
         function move() {
             var elem = document.getElementById("progressBar"); 
             var width = 1;
-            var id = setInterval(frame, 1000);
+            var id = setInterval(frame, 500);
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);

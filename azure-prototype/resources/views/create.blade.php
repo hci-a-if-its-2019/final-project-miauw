@@ -186,9 +186,32 @@
                                 <option selected>Choose</option>
                                 <option value="NetworkWatcherRG">NetworkWatcherRG</option>
                                 <option value="Something">Something</option>
-                                <option value="">Create New</option>
+                                <option value="Create New" class="createnewval">Create New</option>
 
                             </select>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="newResourceGroup" tabindex="-1" role="dialog" aria-labelledby="newResourceGroupLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="newResourceGroupLabel">New Resource Group</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>A resource group is a container that holds related resources for an Azure solution.</h5>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-alternative" id="newResourceGroupInput" placeholder="Resource group name">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" id="buttonAddRG">Add new</button>
+                            </div>
+                            </div>
                         </div>
                     </div>
 
@@ -473,9 +496,31 @@
                             <select class="custom-select" id="virtualnetwork">
                                 <option selected>Choose</option>
                                 <option value="somethingvnet90">somethingvnet90</option>
-                                <option value="">Create New</option>
+                                <option value="Create New" class="createnewval">Create New</option>
 
                             </select>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="newVirtualNetwork" tabindex="-1" role="dialog" aria-labelledby="newVirtualNetworkLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="newVirtualNetworkLabel">New Virtual Network</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control-alternative" id="newVirtualNetworkInput" placeholder="Virtual network name">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" id="buttonVN">Add new</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -497,9 +542,31 @@
                             <select class="custom-select" id="publicip">
                                 <option value="None" selected>None</option>
                                 <option value="test-ip">test-ip</option>
-                                <option value="">Create New</option>
+                                <option value="Create New" class="createnewval">Create New</option>
 
                             </select>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="newPublicIP" tabindex="-1" role="dialog" aria-labelledby="newPublicIPLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="newPublicIPLabel">New Public IP</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control-alternative" id="newPublicIPInput" placeholder="Public IP">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" id="buttonIP">Add new</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -785,11 +852,11 @@
                                 </tr>
                                 <tr>
                                     <td><h5>Resource group</h5></td>
-                                    <td><h5>(new) test</h5></td>
+                                    <td><h5>(new) hehe</h5></td>
                                 </tr>
                                 <tr>
                                     <td><h5>Virtual machine name</h5></td>
-                                    <td><h5>test-titut</h5></td>
+                                    <td><h5>hehe</h5></td>
                                 </tr>
                                 <tr>
                                     <td><h5>Region</h5></td>
@@ -845,7 +912,7 @@
                                 </tr>
                                 <tr>
                                     <td><h5>Public IP</h5></td>
-                                    <td><h5>(new) test-titut-ip</h5></td>
+                                    <td><h5>(new) 10.156.33.6</h5></td>
                                 </tr>
                                 <tr>
                                     <td><h5>Accelerated networking</h5></td>
@@ -930,6 +997,63 @@
 
 @section('js')
     <script>
+        $('#resourcegroup').change(function(){
+            var value = $(this).val()
+            if(value == "Create New"){
+                $('#newResourceGroup').modal('toggle');
+
+                $('#buttonAddRG').click(function(){
+                    //console.log($('#newResourceGroupInput').val());
+                    var new_val = $('#newResourceGroupInput').val();
+                    $(".createnewval").val(new_val);
+                    $(".createnewval").text(new_val);
+
+                    $("#resourcegroup").val(new_val);
+                    $('#newResourceGroup').modal('toggle');
+
+                    
+                })
+            }
+        })
+
+        $('#virtualnetwork').change(function(){
+            var value = $(this).val()
+            if(value == "Create New"){
+                $('#newVirtualNetwork').modal('toggle');
+
+                $('#buttonVN').click(function(){
+                    //console.log($('#newResourceGroupInput').val());
+                    var new_val = $('#newVirtualNetworkInput').val();
+                    $(".createnewval").val(new_val);
+                    $(".createnewval").text(new_val);
+
+                    $("#virtualnetwork").val(new_val);
+                    $('#newVirtualNetwork').modal('toggle');
+
+                    
+                })
+            }
+        })
+
+        $('#publicip').change(function(){
+            var value = $(this).val()
+            if(value == "Create New"){
+                $('#newPublicIP').modal('toggle');
+
+                $('#buttonIP').click(function(){
+                    //console.log($('#newResourceGroupInput').val());
+                    var new_val = $('#newPublicIPInput').val();
+                    $(".createnewval").val(new_val);
+                    $(".createnewval").text(new_val);
+
+                    $("#publicip").val(new_val);
+                    $('#newPublicIP').modal('toggle');
+
+                    
+                })
+            }
+        })
+
         $('#my-form-create li a').click(function (e) {
             e.preventDefault();
             $(this).tab('show');
