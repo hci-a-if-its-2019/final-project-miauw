@@ -12,7 +12,7 @@
             top: 52px;
             position: relative;
             overflow: hidden;
-            height: calc(100vh -52px)
+            height: calc(100vh - 52px);
         }
 
         .main-content .breadcrumb {
