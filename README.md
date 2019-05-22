@@ -54,7 +54,13 @@
       - [d. Transcript with Participant 4](#d-transcript-with-participant-4)
       - [e. Transcript with Participant 5](#e-transcript-with-participant-5)
     - [4. Feedback and Incidence Analysis](#4-feedback-and-incidence-analysis)
-      - [OBSERVATION 1](#observation-1)
+      - [OBSERVATION 1 (Create New Resource Group on VM Creation)](#observation-1-create-new-resource-group-on-vm-creation)
+      - [OBSERVATION 2 (Change IP to Static)](#observation-2-change-ip-to-static)
+        - [1st POV](#1st-pov)
+        - [2nd POV](#2nd-pov)
+      - [OBSERVATION 3 (Price detail)](#observation-3-price-detail)
+      - [OBSERVATION 4 (Deployment Progress View)](#observation-4-deployment-progress-view)
+      - [OBSERVATION 5 (Delete button on Resource Group View)](#observation-5-delete-button-on-resource-group-view)
   - [Part B: Prototyping (again)](#part-b-prototyping-again)
     - [Design Rationale](#design-rationale-1)
     - [High-Fidelity Interactive-Prototype](#high-fidelity-interactive-prototype)
@@ -647,12 +653,62 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 
 ### 4. Feedback and Incidence Analysis
-#### OBSERVATION 1 
- - **Reference**: 
- - **Feedback**: 
- - **Incidence**: 
- - **Reason**: 
- - **Resolution**: 
+#### OBSERVATION 1 (Create New Resource Group on VM Creation)
+
+![obs-1](src/obbs_new-rg.png)
+
+ - **Reference**: [2, 01:30] 
+ - **Feedback**: positive
+ - **Incidence**: -
+ - **Reason**: Create new option is located inside the dropdown menu which make it easier to ba accessed because they're grouped in one place.
+ - **Resolution**: -
+
+#### OBSERVATION 2 (Change IP to Static)
+
+![obs-2](src/obs-ip.png)
+##### 1st POV
+ - **Reference**: [1, 02:08], [5, 01:53]
+ - **Feedback**: Positive
+ - **Incidence**: -
+ - **Reason**: Show the information of current IP type to user
+ - **Resolution**: -
+
+##### 2nd POV
+ - **Reference**: [2, 01:54]
+ - **Feedback**: Neutral tend to positive
+ - **Incidence**: User prefers the default IP type to be static
+ - **Reason**: Usually user need new VM to be accessed by a static IP
+ - **Resolution**: Change default value for IP type radio button to be Static
+
+#### OBSERVATION 3 (Price detail)
+
+![obs-3](src/obs-price.png)
+
+ - **Reference**: [1, 02:23], [3, 01:36]
+ - **Feedback**: Positive
+ - **Incidence**: -
+ - **Reason**: The price can be read easily
+ - **Resolution**: -
+
+#### OBSERVATION 4 (Deployment Progress View)
+
+![obs-4](src/obs-progress.png)
+
+ - **Reference**: [1, 02:42], [4, 03:28], [5, 02:36]
+ - **Feedback**: positive
+ - **Incidence**: -
+ - **Reason**: Good addition as it provides more information and feedback for user
+ - **Resolution**: -
+
+#### OBSERVATION 5 (Delete button on Resource Group View)
+
+![obs-5](src/obs-delete.png)
+
+ - **Reference**: [4, 04:17]
+ - **Feedback**: a bit negative
+ - **Incidence**: User can't find the delete button easily
+ - **Reason**: The delete button styling doens't match to other buttons 
+ - **Resolution**: Change delete button design style to match others and move it inline with other button
 
 ## Part B: Prototyping (again)
 ### Design Rationale
