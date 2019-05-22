@@ -35,6 +35,30 @@
     - [Hardware](#hardware)
     - [Users](#users)
   - [Part C Prototypes](#part-c-prototypes)
+- [Usability Evaluation and Prototyping (again)](#usability-evaluation-and-prototyping-again)
+  - [Operating the Prototype](#operating-the-prototype)
+  - [Part A: Usability Evaluation](#part-a-usability-evaluation)
+    - [1. Brief Description of Participants](#1-brief-description-of-participants)
+      - [a. Description of Participant 1](#a-description-of-participant-1)
+      - [b. Description of Participant 2](#b-description-of-participant-2)
+      - [c. Description of Participant 3](#c-description-of-participant-3)
+      - [d. Description of Participant 4](#d-description-of-participant-4)
+      - [e. Description of Participant 5](#e-description-of-participant-5)
+    - [2. Evaluation Script](#2-evaluation-script)
+      - [Preliminary Question](#preliminary-question-1)
+      - [Instruction Script](#instruction-script-1)
+    - [3. Transcript](#3-transcript)
+      - [a. Transcript with Participant 1](#a-transcript-with-participant-1)
+      - [b. Transcript with Participant 2](#b-transcript-with-participant-2)
+      - [c. Transcript with Participant 3](#c-transcript-with-participant-3)
+      - [d. Transcript with Participant 4](#d-transcript-with-participant-4)
+      - [e. Transcript with Participant 5](#e-transcript-with-participant-5)
+    - [4. Feedback and Incidence Analysis](#4-feedback-and-incidence-analysis)
+      - [OBSERVATION 1](#observation-1)
+  - [Part B: Prototyping (again)](#part-b-prototyping-again)
+    - [Design Rationale](#design-rationale-1)
+    - [High-Fidelity Interactive-Prototype](#high-fidelity-interactive-prototype)
+    - [Application Mockup](#application-mockup)
 
 # Contextual Inquiry
 ## System's Description
@@ -419,3 +443,52 @@ Because all of that, we try to give user more information and feedback right ahe
 - Familiar with cloud service providers
 ## Part C Prototypes
 [Adobe XD](https://xd.adobe.com/view/ef328428-d4e1-44d9-51e7-a30612bffb85-9903/)
+
+# Usability Evaluation and Prototyping (again)
+## Operating the Prototype
+`Video`
+## Part A: Usability Evaluation
+### 1. Brief Description of Participants
+#### a. Description of Participant 1
+#### b. Description of Participant 2
+#### c. Description of Participant 3
+#### d. Description of Participant 4
+#### e. Description of Participant 5
+### 2. Evaluation Script
+#### Preliminary Question
+- Have you ever heard of cloud technology? Like Azure, AWS ?
+- Have you ever used Azure before?
+- Are you familiar with accessing remote server?
+- Have you ever created or used virtual machine on the cloud before?
+
+#### Instruction Script
+- open Azure Portal website
+- login with ITS email account
+- create a Virtual Machine with the following specs:
+type B1s, area Asia South East, allow port 22, use static IP, use a new resource group, use premium SSD, use username and password
+- check on list of resource groups
+- delete the newly created resource group
+- logout from Azure Portal website
+
+### 3. Transcript
+#### a. Transcript with Participant 1
+#### b. Transcript with Participant 2
+#### c. Transcript with Participant 3
+#### d. Transcript with Participant 4
+#### e. Transcript with Participant 5
+
+### 4. Feedback and Incidence Analysis
+#### OBSERVATION 1 
+ - **Reference**: 
+ - **Feedback**: 
+ - **Incidence**: 
+ - **Reason**: 
+ - **Resolution**: 
+
+## Part B: Prototyping (again)
+### Design Rationale
+
+
+### High-Fidelity Interactive-Prototype
+
+### Application Mockup
