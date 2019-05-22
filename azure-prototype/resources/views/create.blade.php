@@ -78,6 +78,25 @@
             color: #1B1B1B;
         }
 
+        .custom-select {
+            height: auto;
+        }
+
+        .review-table .table-borderless {
+            width: 80%;
+            table-layout: fixed;
+        }
+
+        .review-table .table-borderless td {
+            padding: 0;
+            width: 100px;
+            overflow-x: hidden;
+        }
+
+        .review-table .table-borderless td:nth-child(1) h5 {
+            color: #545454;
+        }
+
         
     </style>
 @endsection
@@ -155,7 +174,6 @@
                             <input name="subscription" type="hidden" value="">
                             <select class="custom-select" id="subscription">
                                 <option selected>Azure for students</option>
-                                <option value="1">One</option>
                             </select>
                         </div>
                     </div>
@@ -341,17 +359,566 @@
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-primary">Next: Disks</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="nextTabForm()">Next: Disks</button>
 
                 </div>
-
 
                 <div class="tab-pane" id="fc-two">
-                    <input type="text" class="form-control" name="email" placeholder="enter email">
+                    <h5>Azure VMs have one operating system disk and a temporary disk for short-term storage. You can attach additional data disks. The size of the VM determines the type of storage you can use and the number of data disks allowed. <a href="#">Learn more</a></h5>
+                    
+                    <h4>DISK OPTIONS</h4>
+
+                    <div class="form-group row" id="input-os-disk">
+                        <label for="osdisktype" class="col-md-4 col-form-label">OS disk type</label>
+                        <div class="col-md-8">
+                            <input name="osdisktype" type="hidden" value="">
+                            <select class="custom-select" id="osdisktype">
+                                <option value="Premium SSD" selected>Premium SSD</option>
+                                <option value="Standard SSD">Standard SSD</option>
+                                <option value="Standard HDD">Standard HDD</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-ultra-ssd">
+                        <label for="ultrassd" class="col-md-4 col-form-label">Enable Ultra SSD compability</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-3" class="custom-control-input" id="customRadio5" checked="" type="radio">
+                                <label class="custom-control-label" for="customRadio5">Yes</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-3" class="custom-control-input" id="customRadio6" type="radio">
+                                <label class="custom-control-label" for="customRadio6">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>DATA DISKS</h4>
+
+                    <h5>You can add and configure additional data disks for your virtual machine or attach existing disks. This VM also comes with a temporary disk.</h5>
+
+                    <div class="table-responsive">
+                        <table class="table align-items-center">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">LUN</th>
+                                    <th scope="col">NAME</th>
+                                    <th scope="col">SIZE (GB)</th>
+                                    <th scope="col">DISK TYPE</th>
+                                    <th scope="col">HOST CACHING</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>
+                        <a href="#">Create and attach a new disk</a>
+                        <span style="margin-right: 50px;">&nbsp;</span>
+                        <a href="#">Attach an existing disk</a>
+                    </h5>
+
+                    
+
+                    <div id="accordion-advanced">
+                        <div class="card">
+                            <div class="card-header" id="headingadvanced">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#advanced" aria-expanded="true">
+                                        <h4>Advanced</h4>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="advanced" class="collapse" aria-labelledby="headingadvanced" data-parent="#accordion-advanced">
+                                <div class="card-body">
+                                    <div class="form-group row" id="input-managed-disks">
+                                        <label for="manageddisks" class="col-md-4 col-form-label">Use managed disks</label>
+                                        <div class="col-md-8">
+                                            <div class="custom-control custom-radio mb-2">
+                                                <input name="custom-radio-4" class="custom-control-input" id="customRadio7" checked="" type="radio">
+                                                <label class="custom-control-label" for="customRadio7">Yes</label>
+                                            </div>
+                                            <div class="custom-control custom-radio mb-2">
+                                                <input name="custom-radio-4" class="custom-control-input" id="customRadio8" type="radio">
+                                                <label class="custom-control-label" for="customRadio8">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-primary" onclick="prevTabForm()">Previous</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="nextTabForm()">Next: Networking</button>
+
                 </div>
+
                 <div class="tab-pane" id="fc-three">
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <h5>Define network connectivity for your virtual machine by configuring network interface card (NIC) settings. You can control ports, inbound and outbound connectivity with security group rules, or place behind an existing load balancing solution. <a href="#">Learn more</a></h5>
+                    
+                    <h4>NETWORK INTERFACE</h4>
+
+                    <h5>When creating a virtual machine, a network interface will be created for you.</h5>
+
+                    <div class="form-group row" id="input-virtual-network">
+                        <label for="virtualnetwork" class="col-md-4 col-form-label">Virtual network</label>
+                        <div class="col-md-8">
+                            <input name="virtualnetwork" type="hidden" value="">
+                            <select class="custom-select" id="virtualnetwork">
+                                <option selected>Choose</option>
+                                <option value="somethingvnet90">somethingvnet90</option>
+                                <option value="">Create New</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-subnet">
+                        <label for="virtualnetwork" class="col-md-4 col-form-label">Subnet</label>
+                        <div class="col-md-8">
+                            <input name="subnet" type="hidden" value="">
+                            <select class="custom-select" id="subnet">
+                                <option value="default (10.0.1.0/24)" selected>default (10.0.1.0/24)</option>
+                                <option value="">Create New</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-public-ip">
+                        <label for="publicip" class="col-md-4 col-form-label">Public IP</label>
+                        <div class="col-md-8">
+                            <input name="publicip" type="hidden" value="">
+                            <select class="custom-select" id="publicip">
+                                <option value="None" selected>None</option>
+                                <option value="test-ip">test-ip</option>
+                                <option value="">Create New</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-sku">
+                        <label for="sku" class="col-md-4 col-form-label">SKU</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-5" class="custom-control-input" checked="" id="customRadio9" type="radio">
+                                <label class="custom-control-label" for="customRadio9">Basic</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-5" class="custom-control-input" id="customRadio10" type="radio">
+                                <label class="custom-control-label" for="customRadio10">Standard</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-assignment">
+                        <label for="assignment" class="col-md-4 col-form-label">Assignment</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-6" class="custom-control-input" checked="" id="customRadio11" type="radio">
+                                <label class="custom-control-label" for="customRadio11">Dynamic</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-6" class="custom-control-input" id="customRadio12" type="radio">
+                                <label class="custom-control-label" for="customRadio12">Static</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-accelerated-networking">
+                        <label for="acceleratednetworking" class="col-md-4 col-form-label">Accelerated networking</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-7" class="custom-control-input" id="customRadio13" type="radio">
+                                <label class="custom-control-label" for="customRadio13">On</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-7" class="custom-control-input" checked="" id="customRadio14" type="radio">
+                                <label class="custom-control-label" for="customRadio14">Off</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>LOAD BALANCING</h4>
+
+                    <h5>You can place this virtual machine in the backend pool of an existing Azure load balancing solution. <a href="#">Learn more</a></h5>
+
+                    <div class="form-group row" id="input-load-balancing">
+                        <label for="loadbalancing" class="col-md-4 col-form-label">Place this virtual machine behind an existing load balancing solution?</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-8" class="custom-control-input" id="customRadio15" type="radio">
+                                <label class="custom-control-label" for="customRadio15">Yes</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-8" class="custom-control-input" checked="" id="customRadio16" type="radio">
+                                <label class="custom-control-label" for="customRadio16">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-primary" onclick="prevTabForm()">Previous</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="nextTabForm()">Next: Management</button>
+                </div>
+
+                <div class="tab-pane" id="fc-four">
+                    <h5>Configure monitoring and management options for your VM.​</h5>
+                    
+                    <h4>AZURE SECURITY CENTER</h4>
+
+                    <h5>Azure Security Center provides unified security management and advanced threat protection across hybrid cloud workloads. <a href="#">Learn more</a></h5>
+                    <h5>
+                        <i class="fas fa-check-circle" style="color: #00ff00;"></i>
+                        Your subscription is protected by Azure Security Center basic plan.
+                    </h5>
+
+                    <h4>MONITORING</h4>
+
+                    <div class="form-group row" id="input-boot-diagnostics">
+                        <label for="bootdiagnostics" class="col-md-4 col-form-label">Boot diagnostics</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-9" checked="" class="custom-control-input" id="customRadio17" type="radio">
+                                <label class="custom-control-label" for="customRadio17">On</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-9" class="custom-control-input"  id="customRadio18" type="radio">
+                                <label class="custom-control-label" for="customRadio18">Off</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-os-guest-diagnostics">
+                        <label for="osguestdiagnostics" class="col-md-4 col-form-label">OS guest diagnostics</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-10" class="custom-control-input" id="customRadio19" type="radio">
+                                <label class="custom-control-label" for="customRadio19">On</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-10" checked="" class="custom-control-input"  id="customRadio20" type="radio">
+                                <label class="custom-control-label" for="customRadio20">Off</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" id="input-diag-storage-account">
+                        <label for="diagstorageaccount" class="col-md-4 col-form-label">Diagnostic storage account</label>
+                        <div class="col-md-8">
+                            <input name="diagstorageaccount" type="hidden" value="">
+                            <select class="custom-select" id="diagstorageaccount">
+                                <option value="somethingdiag556" selected>somethingdiag556</option>
+                                <option value="">Create New</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <h4>IDENTITY</h4>
+
+                    <div class="form-group row" id="input-managed-identity">
+                        <label for="managedidentity" class="col-md-4 col-form-label">System assigned managed identity</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-11"  class="custom-control-input" id="customRadio21" type="radio">
+                                <label class="custom-control-label" for="customRadio21">On</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-11" checked="" class="custom-control-input"  id="customRadio22" type="radio">
+                                <label class="custom-control-label" for="customRadio22">Off</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>AUTO SHUTDOWN</h4>
+
+                    <div class="form-group row" id="input-auto-shutdown">
+                        <label for="autoshutdown" class="col-md-4 col-form-label">Enable auto shutdown</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-12" class="custom-control-input" id="customRadio23" type="radio">
+                                <label class="custom-control-label" for="customRadio23">On</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-12" checked="" class="custom-control-input"  id="customRadio24" type="radio">
+                                <label class="custom-control-label" for="customRadio24">Off</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>BACKUP</h4>
+
+                    <div class="form-group row" id="input-auto-backup">
+                        <label for="backup" class="col-md-4 col-form-label">Enable backup</label>
+                        <div class="col-md-8">
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-13" class="custom-control-input" id="customRadio25" type="radio">
+                                <label class="custom-control-label" for="customRadio25">On</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input name="custom-radio-13" checked="" class="custom-control-input"  id="customRadio26" type="radio">
+                                <label class="custom-control-label" for="customRadio26">Off</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-primary" onclick="prevTabForm()">Previous</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="nextTabForm()">Next: Advanced</button>
                 </div>    
+
+                <div class="tab-pane" id="fc-five">
+                    <h5>Add additional configuration, agents, scripts or applications via virtual machine extensions or cloud-init.​</h5>
+                    
+                    <h4>EXTENSIONS</h4>
+
+                    <h5>Extensions provide post-deployment configuration and automation.</h5>
+
+                    <h5>Extentsions <span style="margin-right: 150px;">&nbsp;</span> <a href="#">Select an extension to install</a></h5>
+                    
+                    <h4>CLOUD INIT</h4>
+
+                    <h5>Cloud init is a widely used approach to customize a Linux VM as it boots for the first time. You can use cloud-init to install packages and write files or to configure users and security. <a href="#">Learn more</a></h5>
+                    
+                    <div class="alert alert-default" role="alert">
+                        <h5 style="color: #F2F3F4;">The selected image does not support cloud init.</h5>
+                    </div>
+
+
+
+                    <button type="button" class="btn btn-outline-primary" onclick="prevTabForm()">Previous</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="nextTabForm()">Next: Tags</button>
+                </div>    
+
+                <div class="tab-pane" id="fc-six">
+                    <h5>Tags are name/value pairs that enable you to categorize resources and view consolidated billing by applying the same tag to multiple resources and resource groups. <a href="#">Learn more</a></h5>
+                    <h5 style="margin-top: 10px; margin-bottom: 20px;">Note that if you create tags and then change resource settings on other tabs, your tags will be automatically updated.</h5>
+
+                    <div class="table-responsive">
+                        <table class="table align-items-center">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">NAME</th>
+                                    <th scope="col">VALUE</th>
+                                    <th scope="col">RESOURCE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <select class="custom-select" id="tags-name">
+                                            <option value="" selected></option>
+                                            <option value="">loading ...</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="custom-select" id="tags-value">
+                                            <option value="" selected></option>
+                                            <option value="">loading ...</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="custom-select" id="tags-resource">
+                                            <option value="all" selected>All</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-primary" onclick="prevTabForm()">Previous</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="nextTabForm()">Next: Review + create</button>
+                </div>    
+
+                <div class="tab-pane" id="fc-seven">
+                    <h4>PRODUCT DETAILS</h4>
+                    <div>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h4 style="margin: 0;">Debian Linux</h4>
+                                        <h5>by Debian</h5>
+                                        <h5>
+                                            <a href="#">Terms of use</a> | 
+                                            <a href="#">Privacy policy</a>
+                                        </h5>
+                                    </td>
+                                    <td><h5>Pricing not available for this offering</h5></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4 style="margin: 0;">Standard B1-s</h4>
+                                        <h5>by Microsoft</h5>
+                                        <h5>
+                                            <a href="#">Terms of use</a> | 
+                                            <a href="#">Privacy policy</a>
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h5>Subscription credits apply</h5>
+                                        <h5><strong>129.34 IDR/hr</strong></h5>
+                                        <h5><a href="#">Pricing for other VM sizes</a></h5>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>TERMS</h4>
+                    <h5>By clicking "Create", I (a) agree to the legal terms and privacy statement(s) associated with the Marketplace offering(s) listed above; (b) authorize Microsoft to bill my current payment method for the fees associated with the offering(s), with the same billing frequency as my Azure subscription; and (c) agree that Microsoft may share my contact, usage and transactional information with the provider(s) of the offering(s) for support, billing and other transactional activities. Microsoft does not provide rights for third-party offerings. <a href="#">See the Azure Marketplace Terms</a> for additional details.</h5>
+                    
+                    <h4>BASICS</h4>
+
+                    <div class="review-table">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td><h5>Subscription</h5></td>
+                                    <td><h5>Azure for Students</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Resource group</h5></td>
+                                    <td><h5>(new) test</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Virtual machine name</h5></td>
+                                    <td><h5>test-titut</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Region</h5></td>
+                                    <td><h5>(Asia Pacific) East Asia</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Availability options</h5></td>
+                                    <td><h5>No infrastructure redundancy required</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Authentication type</h5></td>
+                                    <td><h5>Password</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>yolandahp</h5></td>
+                                    <td><h5>SSH</h5></td>
+                                </tr>
+ 
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>DISKS</h4>
+
+                    <div class="review-table">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td><h5>OS disk type</h5></td>
+                                    <td><h5>Premium SSD</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Use managed disks</h5></td>
+                                    <td><h5>Yes</h5></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>NETWORKING</h4>
+
+                    <div class="review-table">
+                        <table class="table table-borderless">
+                            <tbody>
+                                
+                                <tr>
+                                    <td><h5>Virtual network</h5></td>
+                                    <td><h5>(new) test-vnet</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Subnet</h5></td>
+                                    <td><h5>(new) default (10.0.2.0/24)</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Public IP</h5></td>
+                                    <td><h5>(new) test-titut-ip</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Accelerated networking</h5></td>
+                                    <td><h5>Off</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Place this virtual machine behind an existing <br>load balancing solution?</h5></td>
+                                    <td><h5>No</h5></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>MANAGEMENT</h4>
+
+                    <div class="review-table">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td><h5>Boot diagnostics</h5></td>
+                                    <td><h5>On</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>OS guest diagnostics</h5></td>
+                                    <td><h5>On</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Azure Security Center</h5></td>
+                                    <td><h5>Basic (free)</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Diagnostics storage account</h5></td>
+                                    <td><h5>(new) yolandahp</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>System assigned managed identity</h5></td>
+                                    <td><h5>Off</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Auto-shutdown</h5></td>
+                                    <td><h5>Off</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Backup</h5></td>
+                                    <td><h5>Disabled</h5></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>ADVANCED</h4>
+
+                    <div class="review-table">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td><h5>Extensions</h5></td>
+                                    <td><h5>None</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Cloud init</h5></td>
+                                    <td><h5>No</h5></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+
+
+                    <button type="button" class="btn btn-outline-primary" onclick="prevTabForm()">Previous</button>
+                    <button type="submit" class="btn btn-outline-primary" onclick="nextTabForm()">Create</button>
+                </div>    
+
             </div>
         </form>
         
@@ -363,9 +930,22 @@
 
 @section('js')
     <script>
-        $('#my-form-create a').click(function (e) {
+        $('#my-form-create li a').click(function (e) {
             e.preventDefault();
             $(this).tab('show');
         })
+
+        function nextTabForm() {
+            var idx = $('#my-form-create li a.active').index('#my-form-create li a');
+            var new_idx = parseInt(parseInt(idx) +2);
+            //console.log(new_idx)
+            $('#my-form-create li:nth-child(' + new_idx + ') a'   ).tab('show');
+        }
+
+        function prevTabForm() {
+            var idx = $('#my-form-create li a.active').index('#my-form-create li a');
+            var new_idx = parseInt(idx);
+            $('#my-form-create li:nth-child(' + new_idx + ') a'   ).tab('show');
+        }
     </script>
 @endsection
