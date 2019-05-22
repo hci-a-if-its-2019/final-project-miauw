@@ -465,6 +465,9 @@ Because all of that, we try to give user more information and feedback right ahe
 - Student of Informatics Department ITS
 - She has used Google Cloud Platform before
 #### c. Description of Participant 3
+- The participant is 20 years old Male user
+- Student of Informatics Department ITS
+- He is not familiar with Azure
 #### d. Description of Participant 4
 - The participant is a 20 years old Male user
 - Student of Informatics Department ITS
@@ -553,6 +556,30 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 1. **03:57** her: woh sekarang bisa langsung 2 (clicking delete button) dah
 1. **04:02** me: ok cukup, makasih
 #### c. Transcript with Participant 3
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+1. **00:03**me: halo
+1. **00:06**him: halo
+1. **00:15**me: jadi kali ini saya mau minta tolong buat menguji prototype kami
+1. **00:24**him: ok
+1. **00:26**me: sekarang coba buka virtual machine
+1. **00:37**him: (clicking "Virtual machine" from sidebar) ok sudah
+1. **00:47**me: sekarang coba bikin baru
+1. **00:56**him: (clicking "add" button) ok
+1. **01:03**me: bikin resource group baru
+1. **01:08**him: (clicking on "resource group" dropdown) ok sudah
+1. **01:16**me: sekarang coba rubah ipnya jadi ip static
+1. **01:19**him: hmm dimana ya, (clicking on "Networking" tabs) terusss.. (clicking "static" radio button) dah
+1. **01:29**me: good good, lanjutin
+1. **01:36**him: (clicking "review" button) ini harganya murah juga ya, cuma ratusan per jam
+1. **01:50**me: emang murah kalau ngitungnya perjam
+1. **02:04**him: lanjut nih ya (clicking "create" button)
+1. **02:09**me: ok
+1. **02:18**him: dah selesai bikin
+1. **02:26**me: sekarang coba buka resource group
+1. **02:38**him: (clicking "Resource group" from sidebar) ok udah
+1. **02:43**me: sekarang coba delete 2 resource group sekaligus
+1. **02:53**him: (clicking 2 check box) terus hapus (clicking bin icon) done
+1. **03:03**me: oksip, terimakasih
 #### d. Transcript with Participant 4
 #### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member
