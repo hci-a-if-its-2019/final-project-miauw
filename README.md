@@ -485,6 +485,34 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 ### 3. Transcript
 #### a. Transcript with Participant 1
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+1. **00:02** me: halo, jadi ini perbaikan dari yang kemarin
+1. **00:10** her: oke
+1. **00:15** me: masih inget ga kemarin disuruh ngapain aja?
+1. **00:25** her: hmmmm, cuma inget bikin virtual machine doang
+1. **00:36** me: sama ngehapus resource groups
+1. **00:42** her: oiya itu
+1. **00:46** me: sekarang coba dibuka dulu
+1. **00:58** her: oke (openning high-fidelity prototype) ga ada yang beda ya
+1. **01:10** me: ya emang, sekarang lanjut bikin virtual machine aja
+1. **01:22** her: (clicking "Virtual machines" from homepage and then clicking on "add" button) ini kemarin gimana?
+1. **01:42** me: bikin resource group baru dulu
+1. **01:52** her: ok
+1. **02:02** me: terus ipnya jadiin static
+1. **02:08** her: wah bagus - bagus, jadi gampang sekarang
+1. **02:15** me: langsung review aja
+1. **02:23** her: wah harganya sekarang gampang dibaca
+1. **02:35** me: iyes, terus langsung create aja
+1. **02:42** her: wow ada progress barnya sekarang
+1. **02:57** me: yoi
+1. **03:00** her: terus sekarang ngapain?
+1. **03:06** me: sekarang langsung hapus resource group aja
+1. **03:14** her: ok (clicking on "Resource group" on sidebar) ini bisa langsung hapus 2?
+1. **03:28** me: coba aja
+1. **03:34** her: (clicking 2 checkbox) woh bisa, mantab - mantab
+1. **03:49** me: udah dihapus?
+1. **03:59** her: (clicking "bin" icon) ok udah
+1. **04:08** me: sip selesai, terimakasih
 #### b. Transcript with Participant 2
 #### c. Transcript with Participant 3
 #### d. Transcript with Participant 4
