@@ -521,11 +521,11 @@
                         <label for="assignment" class="col-md-4 col-form-label">Assignment</label>
                         <div class="col-md-8">
                             <div class="custom-control custom-radio mb-2">
-                                <input name="custom-radio-6" class="custom-control-input" checked="" id="customRadio11" type="radio">
+                                <input name="custom-radio-6" class="custom-control-input" id="customRadio11" type="radio">
                                 <label class="custom-control-label" for="customRadio11">Dynamic</label>
                             </div>
                             <div class="custom-control custom-radio mb-2">
-                                <input name="custom-radio-6" class="custom-control-input" id="customRadio12" type="radio">
+                                <input name="custom-radio-6" class="custom-control-input" checked="" id="customRadio12" type="radio">
                                 <label class="custom-control-label" for="customRadio12">Static</label>
                             </div>
                         </div>
@@ -916,7 +916,7 @@
 
 
                     <button type="button" class="btn btn-outline-primary" onclick="prevTabForm()">Previous</button>
-                    <button type="submit" class="btn btn-outline-primary" onclick="nextTabForm()">Create</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="createTabForm()">Create</button>
                 </div>    
 
             </div>
@@ -947,5 +947,11 @@
             var new_idx = parseInt(idx);
             $('#my-form-create li:nth-child(' + new_idx + ') a'   ).tab('show');
         }
+
+        function createTabForm() {
+            window.location = "create_progress";
+        }
+
+        
     </script>
 @endsection

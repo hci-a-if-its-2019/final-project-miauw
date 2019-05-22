@@ -241,6 +241,18 @@
                         <td>Azure for Students</td>
                         <td>Southeast Asia</td>
                     </tr>
+                    <tr id="rg-hehe">
+                        <td></td>
+                        <td>hehe</td>
+                        <td>Azure for Students</td>
+                        <td>Southeast Asia</td>
+                    </tr>
+                    <tr id="rg-hehe2">
+                        <td></td>
+                        <td>hehe2</td>
+                        <td>Azure for Students</td>
+                        <td>Southeast Asia</td>
+                    </tr>
                     
                 </tbody>
             </table>
@@ -463,7 +475,9 @@
 
         $('#button-delete-rg').click(function(){
             $('#right-sidebar').toggle('show');
-
+            $('#rg-hehe').remove();
+            $('#rg-hehe2').remove();
+            
         });
 
         $(document).ready(function() {

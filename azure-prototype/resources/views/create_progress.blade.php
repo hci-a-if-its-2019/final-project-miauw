@@ -103,14 +103,14 @@
                     
                     <ul class="navbar-nav ml-0 mr-2">
 
-                        <li class="nav-item nav-active">
+                        <li class="nav-item">
                             <a class="nav-link nav-link-icon" href="#">
                                 <i class="fas fa-trash"></i>
                                 <span class="nav-link-inner--text">Delete</span>
                             </a>
                         </li>
                         
-                        <li class="nav-item">
+                        <li class="nav-item nav-active">
                             <a class="nav-link nav-link-icon" href="{{url('create')}}">
                                 <i class="fas fa-stop-circle"></i>
                                 <span class="nav-link-inner--text">Cancel</span>
@@ -124,7 +124,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item nav-active">
                             <a class="nav-link nav-link-icon" href="#">
                                 <i class="fas fa-redo"></i>
                                 <span class="nav-link-inner--text">Refresh</span>
@@ -162,7 +162,6 @@
             <div class="deployment-detail" style="margin-top: 110px;">
                 <h4>DEPLOYMENT DETAILS</h4>
                 <h5>Start time: 5/22/2019, 3:44:16 PM</h5>
-                <h5>Duration: 2 minutes 10 seconds</h5>
                 <h5>Correlation ID: 9c81f7e8-7240-4cc0-b6bc-745ab9be051f</h5>
             </div>
 
@@ -172,11 +171,11 @@
                         <span>Task completed</span>
                     </div>
                     <div class="progress-percentage">
-                        <span>60%</span>
+                        <span>1%</span>
                     </div>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%; " id="progressBar"></div>
                 </div>
             </div>
         
@@ -187,5 +186,49 @@
 
 @section('js')
     <script>
+        // function progress(timeleft, timetotal, $element) {
+        //     var progressBarWidth = timeleft * $element.width() / timetotal;
+        //     console.log(progressBarWidth)
+            
+        //     $('#progressBar').animate(
+        //         { width: progressBarWidth + 'px'}, 
+        //         timeleft == timetotal ? 0 : 1000, 'linear');
+        //     if(timeleft < timetotal) {
+                
+        //         setTimeout(function() {
+        //             progress(timeleft + 1, timetotal, $element);
+        //         }, 1000);
+                
+        //     }
+        // };
+
+        // progress(0, 15, $('#progressBar'));
+
+        function move() {
+            var elem = document.getElementById("progressBar"); 
+            var width = 1;
+            var id = setInterval(frame, 1000);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    $('.deployment-underway i').removeClass("fa-spinner");
+                    $('.deployment-underway i').addClass("fa-check-circle");
+                    $('.deployment-underway i').css("color","#00ff00");
+                    $('.deployment-underway h2').text("Your deployment is ready");
+                    $('.navbar-2 .nav-item:nth-child(1)').addClass("nav-active");
+                    $('.navbar-2 .nav-item:nth-child(3)').addClass("nav-active");
+                    $('.navbar-2 .nav-item:nth-child(2)').removeClass("nav-active")
+                    $('.deployment-detail').append("<h5>Duration: 1 minutes 40 seconds</h5>");
+                } else {
+                    width++; 
+                    elem.style.width = width + '%';
+                    $('.progress-percentage span').text(width + '%'); 
+                }
+            }
+        }
+
+        
+        move();
+
     </script>
 @endsection
