@@ -81,7 +81,7 @@
                         </label>
                         </div>
                         <div class="text-center">
-                        <button type="button" class="btn btn-primary my-4 btn-signin">Sign in</button>
+                        <button type="button" class="btn btn-primary my-4 btn-signin" onclick="window.location='home'">Sign in</button>
                         </div>
                     </form>
                     </div>
