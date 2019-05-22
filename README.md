@@ -446,7 +446,7 @@ Because all of that, we try to give user more information and feedback right ahe
 
 # Usability Evaluation and Prototyping (again)
 ## Operating the Prototype
-`Video`
+[![Hi-Fi Prototype](https://img.youtube.com/vi/fmIQDOok-e8/0.jpg)](https://www.youtube.com/watch?v=fmIQDOok-e8 "")
 ## Part A: Usability Evaluation
 ### 1. Brief Description of Participants
 #### a. Description of Participant 1
