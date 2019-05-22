@@ -516,6 +516,37 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 #### b. Transcript with Participant 2
 #### c. Transcript with Participant 3
 #### d. Transcript with Participant 4
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+👨‍🔬 : Miaw Member
+
+👨‍💻 : Participant
+1. **00:02** 👨‍🔬: Hai, lagi sibuk ga?
+2. **00:08** 👨‍💻: Ga, kenapa?
+3. **00:12** 👨‍🔬: Mau minta tolong lagi terkait yang dulu ngetest web Azure. Habis dapet masukan, kalompokku bikin prototype. Ini mau dites lagi. 
+2. **00:26** 👨‍💻: Oo yang itu. Jadi kayak gimana?
+3. **00:35** 👨‍🔬: Buka di link ini (membuka link prototype adobe xd)
+4. **00:46** 👨‍💻: Kayaknya masih sama (melihat home)
+5. **00:57** 👨‍🔬: Kalau gitu, coba sekarang kamu bikin VM baru
+6. **01:09** 👨‍💻: (klik menu Virtual Machine di sidebar) Buat baru ya.. (klik 'Add +' di bagian atas). Pilih apa aja?
+7. **01:25** 👨‍🔬: Sama kayak kemarin sih, cuma ini ga semua bisa diubah-ubah. Ini coba bikin VM-nya pake resource group baru terus IP-nya dibuat statis.
+8. **01:43** 👨‍💻: Oo, ini resource group ga ada 'Add new' lagi ya.. Hmm.. (coba klik dropdown resource group) Oh ini ada create new. (klik) Ga ada yang berubah ya
+9. **02:12** 👨‍🔬: Iya, kitanya yang kurang asset-nya hehehe, ya udah habis ini pastikan IP-nya statis
+10. **02:21** 👨‍💻: Hmm, ini (coba-coba klik) oh di connection. IP-nya kuubah jadi statis
+11. **02:32** 👨‍🔬: Oke sip. Kamu lanjutkan sampai create
+12. **02:41** 👨‍💻: Yoi, ini .. (klik review+create) Oh langsung ya. Create yak
+13. **02:59** 👨‍🔬: Sekarang ini tampilan apa?
+14. **03:06** 👨‍💻: Ini yang nunggu proses deploy itu kan ya? Agak beda ya
+15. **03:20** 👨‍🔬: Iya, ditambahin progres bar
+16. **03:28** 👨‍💻: Oo, boleh juga
+17. **03:35** 👨‍🔬: Ok, sekarang ke resource group, kamu hapus resource group "ya" sama "ye".
+18. **03:48** 👨‍💻: Ya, (buka resource group) Pilih "ya" sama "ye" ya. Delete-nya mana ini
+19. **04:10** 👨‍🔬: Coba cek lagi
+20. **04:17** 👨‍💻: O, ini. Kurang senada sama tombol lainnya ya
+21. **04:26** 👨‍🔬: Ok, noted. Lanjutin hapusnya aja
+22. **04:32** 👨‍💻: (Klik hapus) (mengisi form konfirmasi) Ok hapus ya
+23. **04:44** 👨‍🔬: Sip, udah kehapus. Makasih ya
+24. **04:50** 👨‍💻: yoi, masama
+
 #### e. Transcript with Participant 5
 #### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member
