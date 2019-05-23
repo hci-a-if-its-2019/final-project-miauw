@@ -10,6 +10,7 @@
     #sidenav-main {
         background-color: #1B1B1B;
         color: #F2F3F4;
+        margin-top: 52px;
     }
 
     .navbar-light .navbar-nav .nav-link {
@@ -67,5 +68,11 @@
 
     .navbar-search .input-group .form-control:not(:first-child) {
         margin-top: -3px;
+    }
+
+    .navbar-vertical .navbar-collapse:before {
+        display: block;
+        margin: 0;
+        content: '';
     }
 </style>

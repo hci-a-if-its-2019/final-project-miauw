@@ -101,22 +101,22 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                    <i class="far fa-plus-square"></i> Create a resource
+                    <i class="far fa-plus-square" style="color: #11cdef;"></i> Create a resource
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('home')}}">
-                    <i class="fas fa-home"></i> Home
+                    <i class="fas fa-home" style="color: #2dce89;"></i> Home
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                    <i class="fas fa-columns"></i> Dashboard
+                    <i class="fas fa-columns" style="color: #f5365c;"></i> Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                    <i class="fas fa-list-ul"></i> All services
+                    <i class="fas fa-list-ul" style="color: #fb6340;"></i> All services
                     </a>
                 </li>
             </ul>
@@ -126,7 +126,7 @@
             
             <!-- Heading -->
             <h6 class="navbar-heading text-muted">
-            <i class="fas fa-star"></i> Favorites
+            <i class="fas fa-star" style="color: yellow;"></i> Favorites
             </h6>
             
             <!-- Navigation -->

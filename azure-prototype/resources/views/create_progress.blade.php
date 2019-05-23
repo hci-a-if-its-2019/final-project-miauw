@@ -64,28 +64,7 @@
             margin-left: 10px;
         }
 
-        /* #loading {
-                animation: rotation 2s infinite linear;
-        }
-
-        @keyframes rotation {
-                from {
-                        transform: rotate(0deg);
-                }
-                to {
-                        transform: rotate(359deg);
-                }
-        } */
-
-        /* .fas:hover {
-            transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
-            -moz-transform: rotate(360deg);
-        } */
-
-        #loading {
+        #loading.fa-spinner {
             animation-name: rotate; 
             animation-duration: 2s; 
             animation-iteration-count: infinite;

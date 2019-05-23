@@ -280,7 +280,9 @@
                     </div>
 
                     <h4>TYPE THE RESOURCE GROUP NAME</h4>
-                    <input type="text" class="form-control" placeholder="Resource group name" name="resource-group-1">
+                    <div class="form-group has-danger" id="danger-rg-1">
+                        <input type="text" class="form-control" placeholder="Resource group name" name="resource-group-1" class="form-control is-invalid">  
+                    </div>
                     
                     <h4>AFFECTED RESOURCES</h4>
                     
@@ -372,7 +374,9 @@
                     </div>
 
                     <h4>TYPE THE RESOURCE GROUP NAME</h4>
-                    <input type="text" class="form-control" placeholder="Resource group name" name="resource-group-2">
+                    <div class="form-group has-danger" id="danger-rg-2">
+                        <input type="text" class="form-control" placeholder="Resource group name" name="resource-group-2" class="form-control is-invalid">  
+                    </div>
                     
                     <h4>AFFECTED RESOURCES</h4>
                     
@@ -466,18 +470,49 @@
     <script>
 
         $('#close-delete').click(function(){
-            $('#right-sidebar').toggle('show');
+            $('#right-sidebar').animate({width: 'toggle'}, "slow");
         });
 
         $('#delete-groups').click(function(){
-            $('#right-sidebar').toggle('show');
+            //$('#right-sidebar').toggle('show');
+            $('#right-sidebar').animate({width: 'toggle'}, "slow");
         });
 
         $('#button-delete-rg').click(function(){
-            $('#right-sidebar').toggle('show');
+            $('#right-sidebar').animate({width: 'toggle'}, "slow");
             $('#rg-hehe').remove();
             $('#rg-hehe2').remove();
             
+        });
+
+        $('input[name=resource-group-1]').change(function() {
+            if($('input[name=resource-group-1]').val() == "hehe"){
+                $('input[name=resource-group-1]').removeClass("is-invalid");
+                $('input[name=resource-group-1]').addClass("is-valid");
+                $('#danger-rg-1').removeClass("has-danger");
+                $('#danger-rg-1').addClass("has-success");
+            }
+            else{
+                $('input[name=resource-group-1]').removeClass("is-valid");
+                $('input[name=resource-group-1]').addClass("is-invalid");
+                $('#danger-rg-1').removeClass("has-success");
+                $('#danger-rg-1').addClass("has-danger");
+            }
+        });
+
+        $('input[name=resource-group-2]').change(function() {
+            if($('input[name=resource-group-2]').val() == "hehe2"){
+                $('input[name=resource-group-2]').removeClass("is-invalid");
+                $('input[name=resource-group-2]').addClass("is-valid");
+                $('#danger-rg-2').removeClass("has-danger");
+                $('#danger-rg-2').addClass("has-success");
+            }
+            else{
+                $('input[name=resource-group-2]').removeClass("is-valid");
+                $('input[name=resource-group-2]').addClass("is-invalid");
+                $('#danger-rg-2').removeClass("has-success");
+                $('#danger-rg-2').addClass("has-danger");
+            }
         });
 
         $(document).ready(function() {
