@@ -54,8 +54,15 @@
       - [d. Transcript with Participant 4](#d-transcript-with-participant-4)
       - [e. Transcript with Participant 5](#e-transcript-with-participant-5)
     - [4. Feedback and Incidence Analysis](#4-feedback-and-incidence-analysis)
-      - [OBSERVATION 1](#observation-1)
+      - [OBSERVATION 1 (Create New Resource Group on VM Creation)](#observation-1-create-new-resource-group-on-vm-creation)
+      - [OBSERVATION 2 (Change IP to Static)](#observation-2-change-ip-to-static)
+        - [1st POV](#1st-pov)
+        - [2nd POV](#2nd-pov)
+      - [OBSERVATION 3 (Price detail)](#observation-3-price-detail)
+      - [OBSERVATION 4 (Deployment Progress View)](#observation-4-deployment-progress-view)
+      - [OBSERVATION 5 (Delete button on Resource Group View)](#observation-5-delete-button-on-resource-group-view)
   - [Part B: Prototyping (again)](#part-b-prototyping-again)
+    - [Sketch](#sketch)
     - [Design Rationale](#design-rationale-1)
     - [High-Fidelity Interactive-Prototype](#high-fidelity-interactive-prototype)
     - [Application Mockup](#application-mockup)
@@ -465,6 +472,9 @@ Because all of that, we try to give user more information and feedback right ahe
 - Student of Informatics Department ITS
 - She has used Google Cloud Platform before
 #### c. Description of Participant 3
+- The participant is 20 years old Male user
+- Student of Informatics Department ITS
+- He is not familiar with Azure
 #### d. Description of Participant 4
 - The participant is a 20 years old Male user
 - Student of Informatics Department ITS
@@ -527,6 +537,7 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 1. **03:59** her: (clicking "bin" icon) ok udah
 1. **04:08** me: sip selesai, terimakasih
 #### b. Transcript with Participant 2
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 1. **00:02** me: halo kira - kira ini perbaikan dari masukan - masukan participant yang alin
 1. **00:08** her: wow, oke
 1. **00:15** me: menurutmu dari sini ada yang berubah ngga?
@@ -553,6 +564,30 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 1. **03:57** her: woh sekarang bisa langsung 2 (clicking delete button) dah
 1. **04:02** me: ok cukup, makasih
 #### c. Transcript with Participant 3
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+1. **00:03**me: halo
+1. **00:06**him: halo
+1. **00:15**me: jadi kali ini saya mau minta tolong buat menguji prototype kami
+1. **00:24**him: ok
+1. **00:26**me: sekarang coba buka virtual machine
+1. **00:37**him: (clicking "Virtual machine" from sidebar) ok sudah
+1. **00:47**me: sekarang coba bikin baru
+1. **00:56**him: (clicking "add" button) ok
+1. **01:03**me: bikin resource group baru
+1. **01:08**him: (clicking on "resource group" dropdown) ok sudah
+1. **01:16**me: sekarang coba rubah ipnya jadi ip static
+1. **01:19**him: hmm dimana ya, (clicking on "Networking" tabs) terusss.. (clicking "static" radio button) dah
+1. **01:29**me: good good, lanjutin
+1. **01:36**him: (clicking "review" button) ini harganya murah juga ya, cuma ratusan per jam
+1. **01:50**me: emang murah kalau ngitungnya perjam
+1. **02:04**him: lanjut nih ya (clicking "create" button)
+1. **02:09**me: ok
+1. **02:18**him: dah selesai bikin
+1. **02:26**me: sekarang coba buka resource group
+1. **02:38**him: (clicking "Resource group" from sidebar) ok udah
+1. **02:43**me: sekarang coba delete 2 resource group sekaligus
+1. **02:53**him: (clicking 2 check box) terus hapus (clicking bin icon) done
+1. **03:03**me: oksip, terimakasih
 #### d. Transcript with Participant 4
 #### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
 👨‍🔬 : Miaw Member
@@ -619,17 +654,94 @@ type B1s, area Asia South East, allow port 22, use static IP, use a new resource
 
 
 ### 4. Feedback and Incidence Analysis
-#### OBSERVATION 1 
- - **Reference**: 
- - **Feedback**: 
- - **Incidence**: 
- - **Reason**: 
- - **Resolution**: 
+#### OBSERVATION 1 (Create New Resource Group on VM Creation)
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![obs-1](src/obbs_new-rg.png)
+
+ - **Reference**: [2, 01:30] 
+ - **Feedback**: positive
+ - **Incidence**: -
+ - **Reason**: Create new option is located inside the dropdown menu which make it easier to ba accessed because they're grouped in one place.
+ - **Resolution**: -
+
+#### OBSERVATION 2 (Change IP to Static)
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![obs-2](src/obs-ip.png)
+##### 1st POV
+ - **Reference**: [1, 02:08], [5, 01:53]
+ - **Feedback**: Positive
+ - **Incidence**: -
+ - **Reason**: Show the information of current IP type to user
+ - **Resolution**: -
+
+##### 2nd POV
+ - **Reference**: [2, 01:54]
+ - **Feedback**: Neutral tend to positive
+ - **Incidence**: User prefers the default IP type to be static
+ - **Reason**: Usually user need new VM to be accessed by a static IP
+ - **Resolution**: Change default value for IP type radio button to be Static
+
+#### OBSERVATION 3 (Price detail)
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![obs-3](src/obs-price.png)
+
+ - **Reference**: [1, 02:23], [3, 01:36]
+ - **Feedback**: Positive
+ - **Incidence**: -
+ - **Reason**: The price can be read easily
+ - **Resolution**: -
+
+#### OBSERVATION 4 (Deployment Progress View)
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![obs-4](src/obs-progress.png)
+
+ - **Reference**: [1, 02:42], [4, 03:28], [5, 02:36]
+ - **Feedback**: positive
+ - **Incidence**: -
+ - **Reason**: Good addition as it provides more information and feedback for user
+ - **Resolution**: -
+
+#### OBSERVATION 5 (Delete button on Resource Group View)
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![obs-5](src/obs-delete.png)
+
+ - **Reference**: [4, 04:17]
+ - **Feedback**: a bit negative
+ - **Incidence**: User can't find the delete button easily
+ - **Reason**: The delete button styling doens't match to other buttons 
+ - **Resolution**: Change delete button design style to match others and move it inline with other button
 
 ## Part B: Prototyping (again)
-### Design Rationale
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+### Sketch
+Update on Resource Group View
 
+![Resource Group](src/resource_group.jpg)
+
+### Design Rationale
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+From usability evaluation, we found that it may be better for the user if we made an incremental adjustment or try to change as little as possible from previous design. So that, they still recognize all things that used ti be there before and adapt to the change.
 
 ### High-Fidelity Interactive-Prototype
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+[Adobe XD](https://xd.adobe.com/view/575313c5-ec89-4dd8-40e4-aec76090c04a-2162/)
 
 ### Application Mockup
+#### [Back to Table of Contents](#table-of-contents-) <!-- omit in toc -->
+![](src/mockup/VM-1.png)
+
+![](src/mockup/VM-newRG.png)
+
+![](src/mockup/VM-IP.png)
+
+![](src/mockup/VM-pricing.png)
+
+![](src/mockup/VM-progress1.png)
+
+![](src/mockup/VM-progress2.png)
+
+![](src/mockup/RG-del1.png)
+
+![](src/mockup/RG-del2.png)
+
+![](src/mockup/RG-del3.png)
